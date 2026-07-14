@@ -3,7 +3,7 @@ import { services } from '../data/services';
 
 function Services({ t, language }) {
   return (
-    <section className="section">
+    <section className="section services-page">
       <div className="section-heading">
         <p className="eyebrow">{t.servicesEyebrow}</p>
         <h2>{t.servicesTitle}</h2>

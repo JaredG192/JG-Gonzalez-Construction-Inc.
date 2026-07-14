@@ -1,4 +1,4 @@
-import { ShieldCheck } from 'lucide-react';
+import { ShieldCheck } from "lucide-react";
 
 function About({ t }) {
   return (
@@ -11,11 +11,13 @@ function About({ t }) {
 
       <div className="about-card">
         <ShieldCheck size={42} />
+
         <h3>{t.whyTitle}</h3>
+
         <ul>
-          <li>Reliable work</li>
-          <li>Clean job sites</li>
-          <li>Experienced equipment operation</li>
+          {t.whyList.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
         </ul>
       </div>
     </section>

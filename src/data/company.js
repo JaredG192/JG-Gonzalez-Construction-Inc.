@@ -1,7 +1,7 @@
 export const company = {
   name: 'JJ Gonzalez Construction Inc.',
-  phone: '(555) 555-5555',
-  email: 'info@gonzalezexcavation.com',
+  phone: '(909)-419-2540',
+  
 
   area: {
     en: 'Serving San Bernardino County and surrounding areas',

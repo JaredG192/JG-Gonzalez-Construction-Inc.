@@ -3,7 +3,7 @@ import { gallery } from '../data/gallery';
 
 function ProjectsPreview({ language }) {
   return (
-    <section className="section dark-section">
+    <section className="section dark-section homepage-gallery">
       <div className="section-heading">
         <p className="eyebrow">
           {language === 'en' ? 'Recent projects' : 'Proyectos recientes'}

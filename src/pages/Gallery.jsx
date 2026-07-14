@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { gallery } from "../data/gallery";
 
-function Gallery({ t }) {
+function Gallery({ t, language }) {
   const [selected, setSelected] = useState(null);
 
   return (
@@ -19,11 +19,14 @@ function Gallery({ t }) {
             key={index}
             onClick={() => setSelected(item)}
           >
-            <img src={item.image} alt={item.title} />
+            <img
+              src={item.image}
+              alt={item.title[language]}
+            />
 
             <div className="gallery-caption">
-              <span>{item.category}</span>
-              <h3>{item.title}</h3>
+              <span>{item.category[language]}</span>
+              <h3>{item.title[language]}</h3>
             </div>
           </div>
         ))}
@@ -31,7 +34,10 @@ function Gallery({ t }) {
 
       {selected && (
         <div className="lightbox" onClick={() => setSelected(null)}>
-          <img src={selected.image} alt={selected.title} />
+          <img
+            src={selected.image}
+            alt={selected.title[language]}
+          />
         </div>
       )}
     </section>
