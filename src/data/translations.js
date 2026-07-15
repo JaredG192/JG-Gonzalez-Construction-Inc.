@@ -30,7 +30,7 @@ whyTitle: 'Why customers choose us',
 
 callButton: "Call Now",
 textButton: "Text Now",
-callOrText: "Call or Text",
+callOrText: "Call or text",
 
 
 whyList: [
